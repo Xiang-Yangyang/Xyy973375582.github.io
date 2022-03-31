@@ -24,9 +24,9 @@
 //将画板的大小铺满整个屏幕
 			function canvasSetSize() {
 			    let pageWidth = window.innerWidth;
-			    let pageHeight = window.innerHeight;
-			    canvas.width = pageWidth-20;
-			    canvas.height = pageHeight-100;
+			    let pageHeight =window.innerHeight;
+			    canvas.width = pageWidth;
+			    canvas.height = pageHeight;
 			};
 			
 //当浏览器宽高发生变化时，盒子大小与浏览器页面宽高保持一致
