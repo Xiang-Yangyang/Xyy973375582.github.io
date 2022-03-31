@@ -286,6 +286,7 @@
 			}
 //保存功能开始			
 			save.onclick = function () {
+
 				//按下其他键时，显示出的线宽和颜色选取再次隐藏
 				if(penColorHidden.style.display == "flex"){
 					penColorHidden.style.display = "none";
@@ -293,7 +294,9 @@
 				if(lineWidthHidden.style.display == "block"){
 					lineWidthHidden.style.display = "none";
 				}
-			    let imgUrl = canvas.toDataURL("image/png");
+				drawImage(ctx, document.querySelector('.qrcode'), 0, 0, 60, 59)
+				let imgUrl = canvas.toDataURL("image/png");
+				ctx.clearRect(0,0,60, 60);
 			    let saveA = document.createElement("a");
 			    document.body.appendChild(saveA);
 			    saveA.href = imgUrl;
@@ -301,3 +304,8 @@
 			    saveA.target = "_blank";
 			    saveA.click();
 			};
+
+
+			function drawImage(ctx, img, x, y, w, h){
+				ctx.drawImage(img, x, y, w, h);
+			}
