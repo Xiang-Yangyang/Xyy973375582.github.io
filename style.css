@@ -4,10 +4,10 @@
 				padding: 0;
 			}
 			body {
-				overflow: visible;
+				overflow: hidden;
 			}
 			#drawing-board {
-				position: absolute;			
+				position: fixed;
 				cursor: crosshair;
 				z-index: -1;
 			}
