@@ -23,8 +23,8 @@
 			pen.classList.add('active');
 //将画板的大小铺满整个屏幕
 			function canvasSetSize() {
-			    let pageWidth = window.innerWidth;
-			    let pageHeight = window.innerHeight;
+			    let pageWidth = 595;
+			    let pageHeight = 842;
 			    canvas.width = pageWidth;
 			    canvas.height = pageHeight;
 			};
