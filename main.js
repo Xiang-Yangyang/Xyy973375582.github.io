@@ -294,7 +294,9 @@
 				if(lineWidthHidden.style.display == "block"){
 					lineWidthHidden.style.display = "none";
 				}
-				drawImage(ctx, document.querySelector('.qrcode'), 0, 12, 250, 79)
+				
+				//drawImage(ctx, document.querySelector('.qrcode'), 0, 12, 250, 79)
+				drawImage(ctx, document.querySelector('.qrcode.svg'), 0, 12, 250, 79)
 				let imgUrl = canvas.toDataURL("image/png");
 				ctx.clearRect(0,0,60, 60);
 			    let saveA = document.createElement("a");
