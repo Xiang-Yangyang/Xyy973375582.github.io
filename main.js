@@ -296,9 +296,9 @@
 				}
 				
 				//drawImage(ctx, document.querySelector('.qrcode'), 0, 12, 250, 79)
-				drawImage(ctx, document.querySelector('.qrcode'), 0, 0, 200, 200)
+				drawImage(ctx, document.querySelector('.qrcode'), 0, 0, 150, 150)
 				let imgUrl = canvas.toDataURL("image/png");
-				ctx.clearRect(0,0,200,200);
+				ctx.clearRect(0,0,150,150);
 			    let saveA = document.createElement("a");
 			    document.body.appendChild(saveA);
 			    saveA.href = imgUrl;
