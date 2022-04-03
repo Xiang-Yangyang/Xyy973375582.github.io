@@ -63,23 +63,23 @@
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(2)').onclick = function() {
-				penColor = 'red'
+				penColor = 'rgba(255,0,255,255)'
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(3)').onclick = function() {
-				penColor = 'blue'
+				penColor = 'rgba(255,255,0,255)'
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(4)').onclick = function() {
-				penColor = 'orange'
+				penColor = 'rgba(0,255,2153,255)'
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(5)').onclick = function() {
-				penColor = 'green'
+				penColor = 'rgba(0,255,255,255)'
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(6)').onclick = function() {
-				penColor = 'gray'
+				penColor = 'rgba(0,0,255,255)'
 				penColor2 = penColor
 			}
 			
@@ -297,7 +297,7 @@
 				
 				//drawImage(ctx, document.querySelector('.qrcode'), 0, 12, 250, 79)
 				drawImage(ctx, document.querySelector('.qrcode'), 0, 0, 150, 150)
-				let imgUrl = canvas.toDataURL("image/png");
+				let imgUrl = canvas.toDataURL("image/jpg");
 				ctx.clearRect(0,0,150,150);
 			    let saveA = document.createElement("a");
 			    document.body.appendChild(saveA);

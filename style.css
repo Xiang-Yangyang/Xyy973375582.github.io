@@ -77,19 +77,19 @@
 				background-color: black;
 			}
 			.penColorItem:nth-child(2)>div {
-				background-color: red;
+				background-color: rgb(255,0,255);
 			}
 			.penColorItem:nth-child(3)>div {
-				background-color: blue;
+				background-color: rgb(255,255,0);
 			}
 			.penColorItem:nth-child(4)>div {
-				background-color: orange;
+				background-color: rgb(0,255,153);
 			}
 			.penColorItem:nth-child(5)>div {
-				background-color: green;
+				background-color: rgb(0,255,255);
 			}
 			.penColorItem:nth-child(6)>div {
-				background-color: gray;
+				background-color: rgb(0,0,255);
 			}
 /* 画笔粗细 */
 			.penSize {
