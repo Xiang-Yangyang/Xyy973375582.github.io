@@ -301,12 +301,12 @@
 // 				drawImage(ctx, document.querySelector('.canvas_background'), 0, 0, 500, 500)
 				let imgUrl = canvas.toDataURL("image/jpeg");
 				ctx.clearRect(0,0,150,150);
-			    let saveA = document.createElement("a");
-			    document.body.appendChild(saveA);
-			    saveA.href = imgUrl;
-			    saveA.download = "zspic" + (new Date).getTime();
-			    saveA.target = "_blank";
-			    saveA.click();
+			        let saveA = document.createElement("a");
+			        document.body.appendChild(saveA);
+			        saveA.href = imgUrl;
+			        saveA.download = "zspic" + (new Date).getTime();
+			        saveA.target = "_blank";
+			        saveA.click();
 			};
 
 
