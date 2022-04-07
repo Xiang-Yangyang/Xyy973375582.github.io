@@ -1,7 +1,7 @@
 //获取画板元素
 			let canvas = document.getElementById("drawing-board");
 			let ctx = canvas.getContext("2d");
-			let penColor = 'black';
+			let penColor = 'white';
 			let penColor2 = penColor;
 			let penWidth = 2;
 			let shapeLineWidth = document.getElementById("shape-lineWidth");
@@ -59,7 +59,7 @@
 					},1000)
 			}
 			document.querySelector('.penColorItem:first-child').onclick = function() {
-				penColor = 'black'
+				penColor = 'white'
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(2)').onclick = function() {
@@ -139,7 +139,7 @@
 						lineWidthHidden.style.display = "none";
 					}
 					if (eraserState){
-						penColor = "white"
+						penColor = "black"
 						penLineWidth = 31
 					}
 					if(historyData.length == 20){

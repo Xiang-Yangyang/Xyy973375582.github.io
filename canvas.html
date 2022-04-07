@@ -7,10 +7,18 @@
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 	</head>
 	<body>
-		<div>
+	<text style="position:absolute; top:10px; left:150px;">颜色:</text>
+	<input style='position: absolute; top: 10px; left: 185px; 'type="color" id="col" onchange="changeColor()" >
+    <script>
+    var color=document.getElementById("col");//操作谁就获取谁
+    function changeColor(){
+        document.body.style.backgroundColor=color.value;//将h5所选择的颜色值赋值给背景颜色
+    }
+</script>	
+	<div>
 			
 			<div style="position: absolute; up: 10px; right: 10px;"> 
-				<strong>Canvas for Writting and Drawing</strong> 
+				<strong style='color: white' >Canvas for Writting and Drawing</strong> 
 				<br />	
 
 				<a href = "index.html" ><img src = 'img/info.png' width="240" style='position:  absolute; up:60px; right:0px;'/> </a>
@@ -30,7 +38,8 @@
 		
 		
 		
-		<canvas style="position: fixed; top: 0; left: 0" id="drawing-board" width="" height="">
+		<canvas style="background-color: black;
+					   position: fixed; top: 0; left: 0 color='black'" id="drawing-board" width="" height="">
 	
 		</canvas>
 		
