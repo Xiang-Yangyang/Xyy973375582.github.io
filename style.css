@@ -57,7 +57,7 @@
 				width: 5vh;
 				height: 5vh;
 				/* border-radius: 50%; */
-				background-color: white;
+				background-color: rgb(193, 193, 193);
 				/* box-shadow: 0 0 2px 1px gray inset; */
 				/* border: 1px solid gray; */
 			}
@@ -74,7 +74,7 @@
 				transform: scale(1.2);
 			}
 			.penColorItem:first-child>div {
-				background-color: black;
+				background-color: white;
 			}
 			.penColorItem:nth-child(2)>div {
 				background-color: rgb(255,0,255);
@@ -186,8 +186,8 @@
 				border-radius: 50%;
 			}
 			.active {
-				box-shadow: 0 0 10px 2px royalblue;
-				background-color: royalblue;
+				box-shadow: 0 0 10px 2px rgb(100, 225, 65);
+				background-color: rgb(100, 225, 65);
 			}
 			#pen {
 				background: url('./img/pen.svg');
