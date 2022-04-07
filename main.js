@@ -71,7 +71,7 @@
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(4)').onclick = function() {
-				penColor = 'rgba(0,255,2153,255)'
+				penColor = 'rgba(0,255,153,255)'
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(5)').onclick = function() {
@@ -296,7 +296,8 @@
 				}
 				
 				//drawImage(ctx, document.querySelector('.qrcode'), 0, 12, 250, 79)
-				drawImage(ctx, document.querySelector('.qrcode/'), 0, 0, 150, 150)
+
+				drawImage(ctx, document.querySelector('.qrcode'), 0, 0, 150, 150)
 				let imgUrl = canvas.toDataURL("image/jpeg");
 				ctx.clearRect(0,0,150,150);
 			    let saveA = document.createElement("a");

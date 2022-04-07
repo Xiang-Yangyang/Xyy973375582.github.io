@@ -34,7 +34,7 @@
 				border-radius: 50%;
 			}
 			.penColor:active {
-				box-shadow: 0 0 10px 2px royalblue;
+				box-shadow: 0 0 10px 2px rgb(100, 225, 65);
 			}
 			#penColor-hidden {
 				width: calc(10vh + 6px);
@@ -74,7 +74,7 @@
 				transform: scale(1.2);
 			}
 			.penColorItem:first-child>div {
-				background-color: white;
+				background-color: rgb(255, 255, 255);
 			}
 			.penColorItem:nth-child(2)>div {
 				background-color: rgb(255,0,255);
@@ -99,7 +99,7 @@
 				border-radius: 50%;
 			}
 			.penSize:active {
-				box-shadow: 0 0 10px 2px royalblue;
+				box-shadow: 0 0 10px 2px rgb(100, 225, 65);
 				/* background-color: royalblue; */
 			}
 			.penSize>div:first-child {
@@ -202,7 +202,7 @@
 				background-size: 6vh;
 			}
 			#clear:active {
-				box-shadow: 0 0 10px 2px royalblue;
+				box-shadow: 0 0 10px 2px rgb(100, 225, 65);
 				/* background-color: royalblue; */
 			}
 			#return {
@@ -210,7 +210,7 @@
 				background-size: 6vh;
 			}
 			#return:active {
-				box-shadow: 0 0 10px 2px royalblue;
+				box-shadow: 0 0 10px 2px rgb(100, 225, 65);
 				/* background-color: royalblue; */
 			}
 			#save {
@@ -218,7 +218,7 @@
 				background-size: 6vh;
 			}
 			#save:active {
-				box-shadow: 0 0 10px 2px royalblue;
+				box-shadow: 0 0 10px 2px rgb(100, 225, 65);
 			}
 			
 			@media screen and (max-width: 768px) {
