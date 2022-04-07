@@ -298,7 +298,7 @@
 				//drawImage(ctx, document.querySelector('.qrcode'), 0, 12, 250, 79)
 
 				drawImage(ctx, document.querySelector('.qrcode'), 0, 0, 150, 150)
-				drawImage(ctx, document.querySelector('img/canvas_background.png'), 399, 222, 150, 150)
+				drawImage(ctx, document.querySelector('.canvas_background'), 0, 0, 500, 500)
 				let imgUrl = canvas.toDataURL("image/jpeg");
 				ctx.clearRect(0,0,150,150);
 			    let saveA = document.createElement("a");
