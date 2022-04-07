@@ -67,11 +67,11 @@
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(3)').onclick = function() {
-				penColor = 'rgba(255,255,0,255)'
+				penColor = 'rgba(255,200,0,255)'
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(4)').onclick = function() {
-				penColor = 'rgba(0,255,153,255)'
+				penColor = 'rgba(162,255,0,255)'
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(5)').onclick = function() {
@@ -79,7 +79,7 @@
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(6)').onclick = function() {
-				penColor = 'rgba(255, 200, 0, 255)'
+				penColor = 'rgba(0, 102, 255, 255)'
 				penColor2 = penColor
 			}
 			
