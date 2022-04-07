@@ -89,7 +89,7 @@
 				background-color: rgb(0,255,255);
 			}
 			.penColorItem:nth-child(6)>div {
-				background-color: rgb(0,0,255);
+				background-color: rgb(255, 200, 0);
 			}
 /* 画笔粗细 */
 			.penSize {
