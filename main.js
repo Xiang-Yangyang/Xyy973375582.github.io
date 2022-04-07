@@ -236,7 +236,7 @@
 				eraser.classList.add('active');
 				pen.classList.remove('active');
 				penLineWidth = 31
-				penColor = 'white'
+				penColor = 'black'
 			};
 			pen.onclick = function(){
 				//按下其他键时，显示出的线宽和颜色选取再次隐藏
