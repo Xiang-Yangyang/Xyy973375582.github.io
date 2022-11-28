@@ -34,7 +34,7 @@
 				border-radius: 50%;
 			}
 			.penColor:active {
-				box-shadow: 0 0 10px 2px rgb(100, 225, 65);
+				box-shadow: 0 0 10px 2px royalblue;
 			}
 			#penColor-hidden {
 				width: calc(10vh + 6px);
@@ -57,7 +57,7 @@
 				width: 5vh;
 				height: 5vh;
 				/* border-radius: 50%; */
-				background-color: rgb(193, 193, 193);
+				background-color: white;
 				/* box-shadow: 0 0 2px 1px gray inset; */
 				/* border: 1px solid gray; */
 			}
@@ -74,23 +74,22 @@
 				transform: scale(1.2);
 			}
 			.penColorItem:first-child>div {
-				background-color: rgb(255, 255, 255);
+				background-color: black;
 			}
 			.penColorItem:nth-child(2)>div {
-				background-color: rgb(255,0,255);
+				background-color: red;
 			}
 			.penColorItem:nth-child(3)>div {
-				background-color: rgb(255, 200, 0);	
+				background-color: blue;
 			}
 			.penColorItem:nth-child(4)>div {
-				background-color: rgb(162, 255, 0);
-				}
+				background-color: orange;
+			}
 			.penColorItem:nth-child(5)>div {
-				background-color: rgb(0,255,255);
+				background-color: green;
 			}
 			.penColorItem:nth-child(6)>div {
-				background-color: rgb(0, 102, 255);
-				
+				background-color: gray;
 			}
 /* 画笔粗细 */
 			.penSize {
@@ -100,21 +99,21 @@
 				border-radius: 50%;
 			}
 			.penSize:active {
-				box-shadow: 0 0 10px 2px rgb(100, 225, 65);
+				box-shadow: 0 0 10px 2px royalblue;
 				/* background-color: royalblue; */
 			}
 			.penSize>div:first-child {
-				border: 1px solid white;
+				border: 1px solid black;
 				width: 4vh;
 				margin: 1.3vh auto 0;
 			}
 			.penSize>div:nth-child(2) {
-				border: 2px solid white;
+				border: 2px solid black;
 				width: 4vh;
 				margin: 1vh auto 0;
 			}
 			.penSize>div:nth-child(3) {
-				border: 3px solid white;
+				border: 3px solid black;
 				width: 4vh;
 				margin: 1vh auto 0;
 			}
@@ -136,32 +135,32 @@
 				overflow: hidden;
 			}
 			#lineWidth-hidden>div:first-child>div {
-				background-color: #000000;
+				background-color: black;
 				width: 7vw;
 				height: 1px;
 				margin: 24.5px auto;
 			}
 			#lineWidth-hidden>div:nth-child(2)>div {
-				background-color: #000000;
+				background-color: black;
 				width: 7vw;
 				height: 2px;
 				margin: 24px auto;
 			}
 			#lineWidth-hidden>div:nth-child(3)>div {
-				background-color: #000000;
+				background-color: black;
 				width: 7vw;
 				height: 4px;
 				margin: 23px auto;
 			}
 			#lineWidth-hidden>div:nth-child(4)>div {
-				background-color: #000000;
+				background-color: black;
 				width: 7vw;
 				height: 8px;
 				margin: 21px auto 0;
 			}
 			#lineWidth-hidden>div:nth-child(5){
 				font-weight: bold;
-				color: #000000;
+				color: #1E395B;
 				text-align: center;
 			}
 			#lineWidth-hidden input {
@@ -176,7 +175,7 @@
 				font-size: 10px;
 			}
 			#lineWidth-hidden div:hover {
-				background-color: #717171;
+				background-color: #FFA500;
 			}
 			
 /* 工具项 */
@@ -187,8 +186,8 @@
 				border-radius: 50%;
 			}
 			.active {
-				box-shadow: 0 0 10px 2px rgb(100, 225, 65);
-				background-color: rgb(100, 225, 65);
+				box-shadow: 0 0 10px 2px royalblue;
+				background-color: royalblue;
 			}
 			#pen {
 				background: url('./img/pen.svg');
@@ -203,7 +202,7 @@
 				background-size: 6vh;
 			}
 			#clear:active {
-				box-shadow: 0 0 10px 2px rgb(100, 225, 65);
+				box-shadow: 0 0 10px 2px royalblue;
 				/* background-color: royalblue; */
 			}
 			#return {
@@ -211,7 +210,7 @@
 				background-size: 6vh;
 			}
 			#return:active {
-				box-shadow: 0 0 10px 2px rgb(100, 225, 65);
+				box-shadow: 0 0 10px 2px royalblue;
 				/* background-color: royalblue; */
 			}
 			#save {
@@ -219,7 +218,7 @@
 				background-size: 6vh;
 			}
 			#save:active {
-				box-shadow: 0 0 10px 2px rgb(100, 225, 65);
+				box-shadow: 0 0 10px 2px royalblue;
 			}
 			
 			@media screen and (max-width: 768px) {

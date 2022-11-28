@@ -1,7 +1,7 @@
 //获取画板元素
 			let canvas = document.getElementById("drawing-board");
 			let ctx = canvas.getContext("2d");
-			let penColor = 'white';
+			let penColor = 'black';
 			let penColor2 = penColor;
 			let penWidth = 2;
 			let shapeLineWidth = document.getElementById("shape-lineWidth");
@@ -24,9 +24,9 @@
 //将画板的大小铺满整个屏幕
 			function canvasSetSize() {
 			    let pageWidth = window.innerWidth;
-			    let pageHeight =window.innerHeight;
-			    canvas.width = pageWidth;
-			    canvas.height = pageHeight;
+			    let pageHeight = window.innerHeight;
+			    canvas.width = pageWidth-20;
+			    canvas.height = pageHeight-100;
 			};
 			
 //当浏览器宽高发生变化时，盒子大小与浏览器页面宽高保持一致
@@ -59,27 +59,27 @@
 					},1000)
 			}
 			document.querySelector('.penColorItem:first-child').onclick = function() {
-				penColor = 'white'
+				penColor = 'black'
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(2)').onclick = function() {
-				penColor = 'rgba(255,0,255,255)'
+				penColor = 'red'
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(3)').onclick = function() {
-				penColor = 'rgba(255,200,0,255)'
+				penColor = 'blue'
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(4)').onclick = function() {
-				penColor = 'rgba(162,255,0,255)'
+				penColor = 'orange'
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(5)').onclick = function() {
-				penColor = 'rgba(0,255,255,255)'
+				penColor = 'green'
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(6)').onclick = function() {
-				penColor = 'rgba(0, 102, 255, 255)'
+				penColor = 'gray'
 				penColor2 = penColor
 			}
 			
@@ -139,7 +139,7 @@
 						lineWidthHidden.style.display = "none";
 					}
 					if (eraserState){
-						penColor = "black"
+						penColor = "white"
 						penLineWidth = 31
 					}
 					if(historyData.length == 20){
@@ -236,7 +236,7 @@
 				eraser.classList.add('active');
 				pen.classList.remove('active');
 				penLineWidth = 31
-				penColor = 'black'
+				penColor = 'white'
 			};
 			pen.onclick = function(){
 				//按下其他键时，显示出的线宽和颜色选取再次隐藏
@@ -286,7 +286,6 @@
 			}
 //保存功能开始			
 			save.onclick = function () {
-
 				//按下其他键时，显示出的线宽和颜色选取再次隐藏
 				if(penColorHidden.style.display == "flex"){
 					penColorHidden.style.display = "none";
@@ -294,13 +293,7 @@
 				if(lineWidthHidden.style.display == "block"){
 					lineWidthHidden.style.display = "none";
 				}
-				
-				//drawImage(ctx, document.querySelector('.qrcode'), 0, 12, 250, 79)
-
-				drawImage(ctx, document.querySelector('.qrcode'), 0, 0, 150, 150)
-//				drawImage(ctx, document.querySelector('img/canvas_background.png'), 399, 222, 150, 150)
-				let imgUrl = canvas.toDataURL("image/jpeg");
-				ctx.clearRect(0,0,150,150);
+			    let imgUrl = canvas.toDataURL("image/png");
 			    let saveA = document.createElement("a");
 			    document.body.appendChild(saveA);
 			    saveA.href = imgUrl;
@@ -308,8 +301,3 @@
 			    saveA.target = "_blank";
 			    saveA.click();
 			};
-
-
-			function drawImage(ctx, img, x, y, w, h){
-				ctx.drawImage(img, x, y, w, h);
-			}

@@ -6,65 +6,43 @@
 		<title>我的画板</title>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 	</head>
-	<body style="background-color: black">
-		
-		<img src="img/indexbackground.png" width="" height="525" alt="" 
-	 		 style="position: absolute; top: 50px; left:0px; z-index: -1"/>
-		
-		
-			
-		<h3 style="color: white">在上海这场疫情中，
-		</h1>
-
-		<p style="color: white">
-			你可以在这个画布上写写画画你的想法、见闻或是祝福。
-		</p>
-		<p style="color: white">
-			完成后保存图片，发给朋友或朋友圈，让大家加入其中
-		</p>
-		<p style="color: white"> 微信用户&nbsp; <strong style="color: aqua">请点击默认浏览器，以确保能够保存你的画</strong>
-		</p>
-		<div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><<br /><br /> 
-		</div>
-		
-		
-		
-		
-
-		<div>&nbsp;
-		</div>
-		<div>
-			
-		<table>
-			<tr>
-				<td>
-					<a href="canvas.html"><img  src="img/back.svg" alt="" width="200" height="62">
-						
-					</a>
-					
-				</td>
-				
-				<td rowspan="2">
-					<img src="img/step1.jpg" width="149" height="150" alt="" 
-				     style='position: left:500px;top:500px; ' />
-					
-				</td>
-			
-			</tr>
-			
-			<tr>
-				<td>
-					<a  href="about.html">
-					<img src="img/thanks.png" width="200" height="62"/>
-					</a>	
-					
-				</td>
-			
-			</tr>
-				
+	<body>
+		<div><a href="instraction.html">>>了解上海抗疫写画接力活动<<</a>Content for New div Tag Goes Here</div>
+		<img src="img/qrcode_xyy973375582.github.io.png" width="60" height="59" alt=""/>
+	<canvas id="drawing-board" width="" height=""></canvas>
+		<div class="main">
+			<!-- <input type="range" id="size" min="1" max="30" value="5" /> -->
+<!-- 画笔颜色 -->
+			<div class="penColor" title="颜色">
+				<div id="penColor-hidden" style="display: none;">
+					<div class="penColorItem" title="黑色"><div></div></div>
+					<div class="penColorItem" title="红色"><div></div></div>
+					<div class="penColorItem" title="蓝色"><div></div></div>
+					<div class="penColorItem" title="黄色"><div></div></div>
+					<div class="penColorItem" title="绿色"><div></div></div>
+					<div class="penColorItem" title="灰色"><div></div></div>
 				</div>
-		</table>
-		
-		
-    </body>
+			</div>
+			
+<!-- 画笔宽度 -->
+			<div class="penSize" id='shape-lineWidth' title="线宽">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div id="lineWidth-hidden" style="display: none;">
+					<div class="box-hover"><div></div></div>
+					<div class="box-hover"><div></div></div>
+					<div class="box-hover"><div></div></div>
+					<div class="box-hover"><div></div></div>
+					<div class="box-hover" style="font-size: 5px;"><input type="range" id="inputLineWidth" min="1" max="30"/><span>1-30px</span></div>
+				</div>
+			</div>
+				<div class="toolsItem" id="pen"title="画笔"></div>
+				<div class="toolsItem" id="eraser"title="橡皮擦"></div>
+				<div class="toolsItem" id="clear"title="清空"></div>
+				<div class="toolsItem" id="return" title="上一步"></div>
+				<div class="toolsItem" id="save" title="保存"></div>
+		</div>
+		<script src="main.js"></script>
+	</body>
 </html>
