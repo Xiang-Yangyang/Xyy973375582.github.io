@@ -24,9 +24,9 @@
 //将画板的大小铺满整个屏幕
 			function canvasSetSize() {
 			    let pageWidth = window.innerWidth;
-			    let pageHeight = window.innerHeight;
-			    canvas.width = pageWidth-20;
-			    canvas.height = pageHeight-100;
+			    let pageHeight =window.innerHeight;
+			    canvas.width = pageWidth;
+			    canvas.height = pageHeight;
 			};
 			
 //当浏览器宽高发生变化时，盒子大小与浏览器页面宽高保持一致
@@ -63,23 +63,23 @@
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(2)').onclick = function() {
-				penColor = 'red'
+				penColor = 'rgba(255,0,0,255)'
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(3)').onclick = function() {
-				penColor = 'blue'
+				penColor = 'rgba(255,174,0,255)'
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(4)').onclick = function() {
-				penColor = 'orange'
+				penColor = 'rgba(17,255,29,255)'
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(5)').onclick = function() {
-				penColor = 'green'
+				penColor = 'rgba(4,0,255,255)'
 				penColor2 = penColor
 			}
 			document.querySelector('.penColorItem:nth-child(6)').onclick = function() {
-				penColor = 'gray'
+				penColor = 'rgba(195, 0, 255, 255)'
 				penColor2 = penColor
 			}
 			
@@ -236,7 +236,7 @@
 				eraser.classList.add('active');
 				pen.classList.remove('active');
 				penLineWidth = 31
-				penColor = 'white'
+				penColor = 'black'
 			};
 			pen.onclick = function(){
 				//按下其他键时，显示出的线宽和颜色选取再次隐藏
@@ -286,6 +286,7 @@
 			}
 //保存功能开始			
 			save.onclick = function () {
+
 				//按下其他键时，显示出的线宽和颜色选取再次隐藏
 				if(penColorHidden.style.display == "flex"){
 					penColorHidden.style.display = "none";
@@ -293,7 +294,13 @@
 				if(lineWidthHidden.style.display == "block"){
 					lineWidthHidden.style.display = "none";
 				}
-			    let imgUrl = canvas.toDataURL("image/png");
+				
+				//drawImage(ctx, document.querySelector('.qrcode'), 0, 12, 250, 79)
+
+				drawImage(ctx, document.querySelector('.qrcode'), 0, 0, 150, 150)
+//				drawImage(ctx, document.querySelector('img/canvas_background.png'), 399, 222, 150, 150)
+				let imgUrl = canvas.toDataURL("image/jpeg");
+				ctx.clearRect(0,0,150,150);
 			    let saveA = document.createElement("a");
 			    document.body.appendChild(saveA);
 			    saveA.href = imgUrl;
@@ -301,3 +308,8 @@
 			    saveA.target = "_blank";
 			    saveA.click();
 			};
+
+
+			function drawImage(ctx, img, x, y, w, h){
+				ctx.drawImage(img, x, y, w, h);
+			}
